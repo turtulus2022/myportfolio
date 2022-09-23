@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font: 'Courier New', monospace;
+    font-weight:bold;
+    color: white;
+}
+
+main {
+    height: 100%;
+}
+nav {
+    width: 100%;
+    height: 15%;
+    background-color: brown;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav * {
+    padding: 3em;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+.about {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at 0% 100%, black, blueviolet, purple);
+}
+
+.text {
+    width: 40%;
+    height: 15em;
+    background-color: rgb(30, 30, 30);
+    border: tan solid thick;
+    margin-left: 30%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.divider {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(34, 26, 65);
+    border: none;
+}
+
+.spacer {
+    width: 100%;
+    height: 5em;
+    background-color: transparent;
+}
+.projects {
+    padding-top: 10%;
+    padding-bottom: 15%;
+    background: radial-gradient(circle at 100% 0%, black, blueviolet, purple);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    background-color: rgb(30, 30, 30);
+    border: yellow solid thick;
+    display: flex;
+    overflow: hidden;
+}
+
+.project:hover {
+    transform: scale(1.2);
+
+}
+.project.first {
+    left: 50%;
+
+}
+
+.contact {
+    background-color:rgb(34, 26, 65);
+}
+
+footer {
+    background-color:rgb(34, 26, 65);
+}
+
+
