@@ -13,7 +13,15 @@ body {
 }
 
 main {
-    height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
 }
 nav {
     width: 100%;
@@ -32,11 +40,6 @@ nav * {
     padding: 3em;
 }
 
-main {
-    width: 100%;
-    height: 100vh;
-}
-
 .about {
     padding-top: 15%;
     padding-bottom: 15%;
@@ -50,7 +53,6 @@ main {
     height: 15em;
     background-color: rgb(30, 30, 30);
     border: tan solid thick;
-    margin-left: 30%;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -64,7 +66,7 @@ main {
 
 .divider {
     width: 100%;
-    height: 15%;
+    height: 5em;
     background-color: rgb(34, 26, 65);
     border: none;
 }
@@ -74,6 +76,7 @@ main {
     height: 5em;
     background-color: transparent;
 }
+
 .projects {
     padding-top: 10%;
     padding-bottom: 15%;
@@ -86,26 +89,35 @@ main {
 .project-container {
     display: flex;
     justify-content: space-around;
+    gap: 3em;
 }
 
 .project {
     background-color: rgb(30, 30, 30);
-    border: yellow solid thick;
+    border: tan solid thick;
     display: flex;
     overflow: hidden;
+    text-align: center;
 }
 
 .project:hover {
     transform: scale(1.2);
-
-}
-.project.first {
-    left: 50%;
-
+    transition-duration: 1s;
 }
 
 .contact {
     background-color:rgb(34, 26, 65);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.social-media i {
+    font-size: 3em;
+    color: white;
 }
 
 footer {
